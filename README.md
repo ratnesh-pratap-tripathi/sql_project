@@ -61,29 +61,31 @@ It uses **Common Table Expressions (CTEs)** to keep the query clean and readable
     - Calculates Percentage
     - Assigns Grade
 
-  ### 📊 Grade Criteria
+### 📊 Grade Criteria
 
-      | Percentage | Grade |
-      |------------|--------|
-      | ≥ 80 | A+ |
-      | ≥ 70 | A |
-      | ≥ 60 | B |
-      | ≥ 50 | C |
-      | ≥ 40 | D |
-      | < 40 | F |
+| Percentage | Grade |
+|------------|--------|
+| ≥ 80 | A+ |
+| ≥ 70 | A |
+| ≥ 60 | B |
+| ≥ 50 | C |
+| ≥ 40 | D |
+| < 40 | F |
 
+
+  
 ## 🔹 Step 3: Final Output
 
 ### ✅ Adds Remarks Based on Grade
 
-    | Grade | Remarks |
-    |--------|------------|
-    | A+ | Distinction |
-    | A | First Division |
-    | B | Second Division |
-    | C | Third Division |
-    | D | Third Division |
-    | F | Fail |
+| Grade | Remarks |
+|--------|------------|
+| A+ | Distinction |
+| A | First Division |
+| B | Second Division |
+| C | Third Division |
+| D | Third Division |
+| F | Fail |
 
 ---
 
