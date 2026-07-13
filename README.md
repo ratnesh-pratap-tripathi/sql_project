@@ -42,15 +42,6 @@ It uses **Common Table Expressions (CTEs)** to keep the query clean and readable
 ✅ Total Subjects: 6  
 ✅ Maximum Marks: 600  
 
-### 🎯 Output Columns:
-
-  - Student ID
-  - Full Name
-  - Age
-  - Gender
-  - Total Marks
-
-
 
 ---
 
@@ -63,4 +54,48 @@ It uses **Common Table Expressions (CTEs)** to keep the query clean and readable
 - Convert gender (M → Male, F → Female)
 - Calculate total marks
 
+##🔹 Step 2: graded CTE
 
+### ✅ What It Does:
+
+    - Calculates Percentage
+    - Assigns Grade
+
+  ### 📊 Grade Criteria
+
+      | Percentage | Grade |
+      |------------|--------|
+      | ≥ 80 | A+ |
+      | ≥ 70 | A |
+      | ≥ 60 | B |
+      | ≥ 50 | C |
+      | ≥ 40 | D |
+      | < 40 | F |
+
+## 🔹 Step 3: Final Output
+
+### ✅ Adds Remarks Based on Grade
+
+    | Grade | Remarks |
+    |--------|------------|
+    | A+ | Distinction |
+    | A | First Division |
+    | B | Second Division |
+    | C | Third Division |
+    | D | Third Division |
+    | F | Fail |
+
+---
+
+### 📈 Final Output Columns
+
+The final result includes:
+
+- Student ID  
+- Full Name  
+- Age  
+- Gender  
+- Total Marks  
+- Percentage  
+- Grade  
+- Remarks  
