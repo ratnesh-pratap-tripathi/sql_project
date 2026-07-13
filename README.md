@@ -54,7 +54,7 @@ It uses **Common Table Expressions (CTEs)** to keep the query clean and readable
 - Convert gender (M → Male, F → Female)
 - Calculate total marks
 
-##🔹 Step 2: graded CTE
+## 🔹 Step 2: graded CTE
 
 ### ✅ What It Does:
 
