@@ -1,0 +1,11 @@
+std_ID,first_name,last_name,age,gender,mobile_no,address
+GA-101,Aarav,Sharma,20,M,9123456780,"45, Rohini Sector 8, Delhi"
+GA-102,Ananya,Gupta,19,F,9134567891,"22, Lajpat Nagar, Delhi"
+GA-103,Rohan,Mehta,21,M,9145678902,"10, Dwarka Sector 4, Delhi"
+GA-104,Priya,Nair,18,F,9156789013,"18, Janakpuri, Delhi"
+GA-105,Arjun,Reddy,22,M,9167890124,"33, Saket, Delhi"
+GA-106,Sneha,Iyer,20,F,9178901235,"27, Karol Bagh, Delhi"
+GA-107,Vikram,Singh,23,M,9189012346,"12, Pitampura, Delhi"
+GA-108,Kavya,Patel,19,F,9190123457,"55, Mayur Vihar, Delhi"
+GA-109,Rahul,Verma,21,M,9201234568,"40, Vasant Kunj, Delhi"
+GA-110,Meera,Das,18,F,9212345679,"16, Rajouri Garden, Delhi"
