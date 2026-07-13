@@ -1,12 +1,20 @@
-/* ===============================
-STUDENT RESULT MANAGEMENT SYSTEM
-Step-by-Step SQL Code Execution
-=============================== */
+-- ===============================
+-- STUDENT RESULT MANAGEMENT SYSTEM
+-- Step-by-Step SQL Code Execution
+-- =============================== 
 
+-- -------------------------------
+-- STEP 1: Create Database
+-- -------------------------------
 
 CREATE DATABASE student_data;
 
 USE student_data;
+
+
+-- -------------------------------
+-- STEP 2: Create Student Table (std)
+-- -------------------------------
 
 
 DROP TABLE IF EXISTS std;
@@ -22,7 +30,18 @@ CREATE TABLE std (
     CHECK (mobile_no REGEXP '^[0-9]{10}$')
 );
 
+-- Explanation:
+-- - std_ID → Primary Key
+-- - first_name → Required
+-- - age → Required
+-- - mobile_no → Must contain exactly 10 digits
+-- - CHECK constraint validates mobile number format
 
+
+-- -------------------------------
+-- STEP 3: Create Subject Table (sub)
+-- -------------------------------
+    
 DROP TABLE IF EXISTS sub;
 
 CREATE TABLE sub (
@@ -35,6 +54,17 @@ CREATE TABLE sub (
     Sanskrit INT NOT NULL CHECK (Sanskrit BETWEEN 0 AND 100),
     FOREIGN KEY (std_ID) REFERENCES std (std_ID)
 );
+
+-- Explanation:
+-- - Each subject must be between 0 and 100
+-- - std_ID is both Primary Key and Foreign Key
+-- - Ensures referential integrity
+
+
+-- -------------------------------
+-- STEP 4: Calculate Total Marks (CTE - result)
+-- -------------------------------
+
 
 WITH result AS (
     SELECT 
@@ -52,6 +82,16 @@ WITH result AS (
     GROUP BY st.std_ID, st.first_name, st.last_name, st.age, st.gender
 ),
 
+--     Explanation:
+-- - Joins std and sub tables
+-- - Creates full name
+-- - Converts gender code
+-- - Calculates total marks (out of 600)
+
+-- -------------------------------
+-- STEP 5: Calculate Percentage and Grade (CTE - graded)
+-- -------------------------------
+
 graded AS (
     SELECT *,
            ROUND((total_marks / 600) * 100, 2) AS percentage,
@@ -66,6 +106,16 @@ graded AS (
     FROM result
 )
 
+-- Explanation:
+-- - Calculates percentage
+-- - Assigns grade using CASE
+-- - Percentage rounded to 2 decimal places
+
+
+-- -------------------------------
+-- STEP 6: Add Remarks and Display Final Result
+-- -------------------------------
+
 SELECT *,
        CASE
            WHEN grade = 'A+' THEN 'Distinction'
@@ -76,3 +126,27 @@ SELECT *,
            ELSE 'Fail'
        END AS remarks
 FROM graded;
+
+
+-- Explanation:
+-- - Adds remarks based on grade
+-- - Displays complete result sheet
+
+
+-- -------------------------------
+-- FINAL OUTPUT INCLUDES:
+-- -------------------------------
+
+-- - Student ID
+-- - Full Name
+-- - Age
+-- - Gender
+-- - Total Marks
+-- - Percentage
+-- - Grade
+-- - Remarks
+
+
+-- ===============================
+-- PROJECT COMPLETED SUCCESSFULLY
+-- ===============================
