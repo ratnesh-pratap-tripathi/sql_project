@@ -1,3 +1,9 @@
+/* ===============================
+STUDENT RESULT MANAGEMENT SYSTEM
+Step-by-Step SQL Code Execution
+=============================== */
+
+
 CREATE DATABASE student_data;
 
 USE student_data;
