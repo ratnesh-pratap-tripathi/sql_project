@@ -53,3 +53,9 @@ It uses **Common Table Expressions (CTEs)** to keep the query clean and readable
 - Convert gender (M → Male, F → Female)
 - Calculate total marks
 
+## ✅ What It Does
+
+- Joins `std` and `sub` tables  
+- Creates full name using `CONCAT(first_name, ' ', last_name)`  
+- Converts gender code (`M/F`) → (`Male/Female`)  
+- Calculates total marks (sum of 6 subjects)  
