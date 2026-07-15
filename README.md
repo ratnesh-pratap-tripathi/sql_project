@@ -100,4 +100,7 @@ The final result includes:
 - Total Marks  
 - Percentage  
 - Grade  
-- Remarks  
+- Remarks
+
+
+<img width="1408" height="768" alt="Image" src="https://github.com/user-attachments/assets/3ea7be26-7c09-40d1-a2f4-96dd1e7bb847" />
