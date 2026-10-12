@@ -8,6 +8,10 @@ exercises, from basic `SELECT` queries to joins and subqueries.
 -   [Database setup](#database-setup)
 -   [SQL exercises](#sql-exercises)
 
+---
+![image alt](https://github.com/ratnesh-pratap-tripathi/sql_project/blob/127f1c448adabd0fdae7dddeacd571ee9349b725/SQL_two_project/SQL%20Practice%20Script-11%20Infographic.png)
+  
+
 ## Database setup
 
 Run this section first to create `company_db`, the `Employee`,
